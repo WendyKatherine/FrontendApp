@@ -1,0 +1,27 @@
+<div class="relative w-full flex flex-col items-center overflow-hidden p-4">
+
+    <!-- Tarjetas -->
+    <div class="flex transition-transform ease-out duration-700" [ngStyle]="{ transform: 'translateX(' + translateX + 'px)' }" #sliderContainer>
+      <div
+        *ngFor="let card of cards"
+        class="w-[900px] h-[300px] flex-shrink-0 bg-oscuro2 text-white rounded-[50px] p-6 m-8 shadow-md mx-auto"
+      >
+        <h3 class="text-2xl font-bold mb-4">Card {{ card.title }}</h3>
+        <p class="mb-4">{{ card.description }}</p>
+        <button class="bg-acento text-black px-6 py-2 rounded hover:bg-opacity-80">
+          Ver más
+        </button>
+      </div>
+    </div>
+  
+    <!-- Botones de navegación -->
+    <button (click)="prev()" class="rounded-full box-item p-4 absolute left-4 top-1/2 -translate-y-1/2 z-10">
+        <ng-icon name="heroArrowLongLeft" class="w-8 h-8 text-white hover:text-acento transition" />
+    </button>
+    
+    <!-- Botón derecho -->
+    <button (click)="next()" class="rounded-full box-item p-4 absolute right-4 top-1/2 -translate-y-1/2 z-10">
+        <ng-icon name="heroArrowLongRight" class="w-8 h-8 text-white hover:text-acento transition" />
+    </button>
+  </div>
+  

@@ -1,0 +1,21 @@
+@use "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0D1F2B;
+  color: #FFFFFF;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-item{
+  background: #12293B;
+}
