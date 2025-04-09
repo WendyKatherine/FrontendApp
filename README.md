@@ -1,3 +1,8 @@
+<h1> Frontend Angular Sports App </h1>
+  
+  ![image](https://github.com/user-attachments/assets/97565adc-8ea0-4e78-acea-30558150088d)
+
+
 # FrontendApp
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
